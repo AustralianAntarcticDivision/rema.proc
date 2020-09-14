@@ -1,0 +1,9 @@
+.Rproj.user
+.Rhistory
+add_rockoutcrop*
+*.Rout
+dem_rema_cleanish.R
+logfile
+rock.rds
+rockraster/
+
