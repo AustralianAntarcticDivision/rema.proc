@@ -13,6 +13,9 @@ knitr::opts_chunk$set(echo = TRUE)
 
 arock.R batch started at 11.02 am September 14
 
+Proportion of tiles done vs tiles-including-rock is ~.23, and each "rock tile" compresses to about 2.5Mb (it's a single Byte, and compressed by DEFLATE) so we end up with about 380 rock tiles at 1Gb total. 
+
+
 ## arock.R
 
    reads
@@ -46,11 +49,12 @@ polytiles$fullname <- files$fullname[match(polytiles$tile, files$tile)]
 
 ff <- list.files("rockraster/")
 tl <- substr(ff, 1, 5)
+logn <- as.integer(readLines("logfile"))
 png(glue::glue("/perm_storage/home/mdsumner/Git/rema.proc/index_rock_{logn}.png"))
 plot(polytiles, border = "lightgrey")
-logn <- as.integer(readLines("logfile"))
+
 points(coordinates(polytiles)[match(tl, polytiles$tile), ], col = "firebrick", pch = "X")
-text(coordinates(polytiles)[1:logn, ], lab = 1:logn, cex = 0.5)
+text(coordinates(polytiles)[1:logn, ], lab = 1:logn, cex = 0.5, col = "hotpink")
 for (i in list.files("rockraster", full.names = TRUE)) plot(extent(raster(i)), add = TRUE)
 dev.off()
 
