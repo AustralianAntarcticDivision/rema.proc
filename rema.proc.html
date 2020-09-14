@@ -401,17 +401,8 @@ summary {
 <div id="work-in-progress" class="section level2">
 <h2>Work in progress</h2>
 <p>Create an index of progress so far, boxes with red cross are rock-containing tiles. Boxes with label have been classified by rock presence. (About 8 hours to run).</p>
-<pre class="r"><code>library(raadtools)</code></pre>
-<pre><code>## Loading required package: raster</code></pre>
-<pre><code>## Loading required package: sp</code></pre>
-<pre><code>## global option &#39;raadfiles.data.roots&#39; set:
-## &#39;/rdsi/PRIVATE/raad/data               2020-09-14 00:35:13
-##  /rdsi/PRIVATE/raad/data_local         2020-09-14 00:42:56
-##  /rdsi/PRIVATE/raad/data_staging       2020-09-14 00:42:59
-##  /rdsi/PRIVATE/raad/data_deprecated    2020-09-14 00:42:59
-##  /rdsi/PUBLIC/raad/data                2020-09-14 01:28:25&#39;</code></pre>
-<pre><code>## Uploading raad file cache as at 2020-09-14 02:31:54 (973197 files listed)</code></pre>
-<pre class="r"><code>print(getwd())</code></pre>
+<pre class="r"><code>library(raadtools)
+print(getwd())</code></pre>
 <pre><code>## [1] &quot;/perm_storage/home/mdsumner/Git/rema.proc&quot;</code></pre>
 <pre class="r"><code>files &lt;- raadfiles::rema_8m_files()
 files$tile &lt;- basename(dirname(files$fullname))
