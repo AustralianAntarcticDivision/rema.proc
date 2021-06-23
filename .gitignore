@@ -7,4 +7,7 @@ dem_rema_cleanish.R
 logfile
 rock.rds
 rockraster/
-
+100m
+200m
+filelist
+srs_def

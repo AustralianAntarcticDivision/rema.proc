@@ -23,10 +23,10 @@ polytiles$size <- 0
 
 hasrock <- polytiles$hasrock
 size <- polytiles$size
-lf <- list.files("rockraster")
-polytiles$outfile <- file.path("rockraster", basename(dirname(polytiles$fullname)), gsub("dem", "rock", basename(polytiles$fullname)))
 
-
+## this was run locally, and then moved into the data_local//8m/ folders
+raadroot <- "/rdsi/PRIVATE/raad/data_local/aad.gov.au/rema/processing/v1.1"
+polytiles$outfile <- file.path(raadroot, basename(dirname(polytiles$fullname)), gsub("dem", "rock", basename(polytiles$fullname)))
 
 
 for (i in seq_len(nrow(polytiles))) {
@@ -47,7 +47,68 @@ for (i in seq_len(nrow(polytiles))) {
      rm(r, p)
     }
 
- polytiles$hasrock <- hasrock
- polytiles$size <- size
- saveRDS(polytiles, "01_rock_classification/polytiles_rock.rds")
-#
+polytiles$hasrock <- hasrock
+polytiles$size <- size
+saveRDS(polytiles, "01_rock_classification/polytiles_rock_8m.rds")
+
+
+
+## now 200m
+rockfiles <- tibble::tibble(fullname = fs::dir_ls(file.path(raadroot, "200m"), regexp = "filled_geoid.*tif$", recurse = TRUE))
+rockfiles$hasrock <- FALSE
+rockfiles$size <- 0
+
+raadroot <- "/rdsi/PRIVATE/raad2/data_local/aad.gov.au/rema/processing/v1.1/200m"
+rockfiles$outfile <- file.path(raadroot, basename(dirname(rockfiles$fullname)), gsub("filled_geoid", "rock", basename(rockfiles$fullname)))
+
+
+for (i in seq_len(nrow(rockfiles))) {
+  r <- raster(rockfiles$fullname[i])
+  p <- fasterize(rock, r)
+
+  test <- !all(is.na(values(p)))
+
+  rockfiles$hasrock[i] <- test
+  if (test) {
+
+    writeRaster(p, rockfiles$outfile[i], options = c(COMPRESS = "DEFLATE", SPARSE_OK="NO"), datatype = "INT1U", overwrite = FALSE)
+    rockfiles$size[i] <- file.info(rockfiles$outfile[i])$size
+
+  }
+  rm(r, p)
+  print(i)
+}
+## do this properly as part of raadtools scan
+saveRDS(rockfiles, "01_rock_classification/rockfiles_rock_200m.rds")
+
+
+
+## now 100m
+raadroot <- "/rdsi/PRIVATE/raad2/data_local/aad.gov.au/rema/processing/v1.1"
+
+rockfiles <- tibble::tibble(fullname = fs::dir_ls(file.path(raadroot, "100m"), regexp = "filled_geoid.*tif$", recurse = TRUE))
+rockfiles$hasrock <- FALSE
+rockfiles$size <- 0
+
+rockfiles$outfile <- file.path(raadroot, "100m", basename(dirname(rockfiles$fullname)), gsub("filled_geoid", "rock", basename(rockfiles$fullname)))
+
+
+for (i in seq_len(nrow(rockfiles))) {
+  r <- raster(rockfiles$fullname[i])
+  p <- fasterize(rock, r)
+
+  test <- !all(is.na(values(p)))
+
+  rockfiles$hasrock[i] <- test
+  if (test) {
+
+    writeRaster(p, rockfiles$outfile[i], options = c(COMPRESS = "DEFLATE", SPARSE_OK="NO"), datatype = "INT1U", overwrite = FALSE)
+    rockfiles$size[i] <- file.info(rockfiles$outfile[i])$size
+
+  }
+  rm(r, p)
+  print(i)
+}
+
+saveRDS(rockfiles, "01_rock_classification/rockfiles_rock_100m.rds")
+
