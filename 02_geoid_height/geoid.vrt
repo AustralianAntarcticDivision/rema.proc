@@ -1,0 +1,263 @@
+<VRTDataset rasterXSize="8641" rasterYSize="4321">
+  <SRS dataAxisToSRSAxisMapping="2,1">GEOGCS["WGS 84",DATUM["WGS_1984",SPHEROID["WGS 84",6378137,298.257223563,AUTHORITY["EPSG","7030"]],AUTHORITY["EPSG","6326"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AXIS["Latitude",NORTH],AXIS["Longitude",EAST],AUTHORITY["EPSG","4326"]]</SRS>
+  <GeoTransform> -1.8000000000000000e+02,  4.1666669999999982e-02,  0.0000000000000000e+00,  9.0041670269999997e+01,  0.0000000000000000e+00, -4.1666669999999982e-02</GeoTransform>
+  <VRTRasterBand dataType="Float32" band="1">
+    <NoDataValue>-3.4028234663852886e+38</NoDataValue>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">/rdsi/PUBLIC/raad/data/earth-info.nga.mil/GandG/wgs84/gravitymod/egm2008/GIS/world_geoid/n00e00/n00e00/w001001.adf</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1081" RasterYSize="1081" DataType="Float32" BlockXSize="512" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="1081" ySize="1081" />
+      <DstRect xOff="4320" yOff="1080" xSize="1081" ySize="1081" />
+      <NODATA>-3.4028234663852886e+38</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">/rdsi/PUBLIC/raad/data/earth-info.nga.mil/GandG/wgs84/gravitymod/egm2008/GIS/world_geoid/n00e135/n00e135/w001001.adf</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1081" RasterYSize="1081" DataType="Float32" BlockXSize="512" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="1081" ySize="1081" />
+      <DstRect xOff="7560" yOff="1080" xSize="1081" ySize="1081" />
+      <NODATA>-3.4028234663852886e+38</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">/rdsi/PUBLIC/raad/data/earth-info.nga.mil/GandG/wgs84/gravitymod/egm2008/GIS/world_geoid/n00e45/n00e45/w001001.adf</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1081" RasterYSize="1081" DataType="Float32" BlockXSize="512" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="1081" ySize="1081" />
+      <DstRect xOff="5400" yOff="1080" xSize="1081" ySize="1081" />
+      <NODATA>-3.4028234663852886e+38</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">/rdsi/PUBLIC/raad/data/earth-info.nga.mil/GandG/wgs84/gravitymod/egm2008/GIS/world_geoid/n00e90/n00e90/w001001.adf</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1081" RasterYSize="1081" DataType="Float32" BlockXSize="512" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="1081" ySize="1081" />
+      <DstRect xOff="6480" yOff="1080" xSize="1081" ySize="1081" />
+      <NODATA>-3.4028234663852886e+38</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">/rdsi/PUBLIC/raad/data/earth-info.nga.mil/GandG/wgs84/gravitymod/egm2008/GIS/world_geoid/n00w135/n00w135/w001001.adf</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1081" RasterYSize="1081" DataType="Float32" BlockXSize="512" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="1081" ySize="1081" />
+      <DstRect xOff="1080" yOff="1080" xSize="1081" ySize="1081" />
+      <NODATA>-3.4028234663852886e+38</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">/rdsi/PUBLIC/raad/data/earth-info.nga.mil/GandG/wgs84/gravitymod/egm2008/GIS/world_geoid/n00w180/n00w180/w001001.adf</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1081" RasterYSize="1081" DataType="Float32" BlockXSize="512" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="1081" ySize="1081" />
+      <DstRect xOff="0" yOff="1080" xSize="1081" ySize="1081" />
+      <NODATA>-3.4028234663852886e+38</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">/rdsi/PUBLIC/raad/data/earth-info.nga.mil/GandG/wgs84/gravitymod/egm2008/GIS/world_geoid/n00w45/n00w45/w001001.adf</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1081" RasterYSize="1081" DataType="Float32" BlockXSize="512" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="1081" ySize="1081" />
+      <DstRect xOff="3240" yOff="1080" xSize="1081" ySize="1081" />
+      <NODATA>-3.4028234663852886e+38</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">/rdsi/PUBLIC/raad/data/earth-info.nga.mil/GandG/wgs84/gravitymod/egm2008/GIS/world_geoid/n00w90/n00w90/w001001.adf</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1081" RasterYSize="1081" DataType="Float32" BlockXSize="512" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="1081" ySize="1081" />
+      <DstRect xOff="2160" yOff="1080" xSize="1081" ySize="1081" />
+      <NODATA>-3.4028234663852886e+38</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">/rdsi/PUBLIC/raad/data/earth-info.nga.mil/GandG/wgs84/gravitymod/egm2008/GIS/world_geoid/n45e00/n45e00/w001001.adf</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1081" RasterYSize="1081" DataType="Float32" BlockXSize="512" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="1081" ySize="1081" />
+      <DstRect xOff="4320" yOff="0" xSize="1081" ySize="1081" />
+      <NODATA>-3.4028234663852886e+38</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">/rdsi/PUBLIC/raad/data/earth-info.nga.mil/GandG/wgs84/gravitymod/egm2008/GIS/world_geoid/n45e135/n45e135/w001001.adf</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1081" RasterYSize="1081" DataType="Float32" BlockXSize="512" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="1081" ySize="1081" />
+      <DstRect xOff="7560" yOff="0" xSize="1081" ySize="1081" />
+      <NODATA>-3.4028234663852886e+38</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">/rdsi/PUBLIC/raad/data/earth-info.nga.mil/GandG/wgs84/gravitymod/egm2008/GIS/world_geoid/n45e45/n45e45/w001001.adf</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1081" RasterYSize="1081" DataType="Float32" BlockXSize="512" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="1081" ySize="1081" />
+      <DstRect xOff="5400" yOff="0" xSize="1081" ySize="1081" />
+      <NODATA>-3.4028234663852886e+38</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">/rdsi/PUBLIC/raad/data/earth-info.nga.mil/GandG/wgs84/gravitymod/egm2008/GIS/world_geoid/n45e90/n45e90/w001001.adf</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1081" RasterYSize="1081" DataType="Float32" BlockXSize="512" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="1081" ySize="1081" />
+      <DstRect xOff="6480" yOff="0" xSize="1081" ySize="1081" />
+      <NODATA>-3.4028234663852886e+38</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">/rdsi/PUBLIC/raad/data/earth-info.nga.mil/GandG/wgs84/gravitymod/egm2008/GIS/world_geoid/n45w135/n45w135/w001001.adf</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1081" RasterYSize="1081" DataType="Float32" BlockXSize="512" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="1081" ySize="1081" />
+      <DstRect xOff="1080" yOff="0" xSize="1081" ySize="1081" />
+      <NODATA>-3.4028234663852886e+38</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">/rdsi/PUBLIC/raad/data/earth-info.nga.mil/GandG/wgs84/gravitymod/egm2008/GIS/world_geoid/n45w180/n45w180/w001001.adf</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1081" RasterYSize="1081" DataType="Float32" BlockXSize="512" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="1081" ySize="1081" />
+      <DstRect xOff="0" yOff="0" xSize="1081" ySize="1081" />
+      <NODATA>-3.4028234663852886e+38</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">/rdsi/PUBLIC/raad/data/earth-info.nga.mil/GandG/wgs84/gravitymod/egm2008/GIS/world_geoid/n45w45/n45w45/w001001.adf</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1081" RasterYSize="1081" DataType="Float32" BlockXSize="512" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="1081" ySize="1081" />
+      <DstRect xOff="3240" yOff="0" xSize="1081" ySize="1081" />
+      <NODATA>-3.4028234663852886e+38</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">/rdsi/PUBLIC/raad/data/earth-info.nga.mil/GandG/wgs84/gravitymod/egm2008/GIS/world_geoid/n45w90/n45w90/w001001.adf</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1081" RasterYSize="1081" DataType="Float32" BlockXSize="512" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="1081" ySize="1081" />
+      <DstRect xOff="2160" yOff="0" xSize="1081" ySize="1081" />
+      <NODATA>-3.4028234663852886e+38</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">/rdsi/PUBLIC/raad/data/earth-info.nga.mil/GandG/wgs84/gravitymod/egm2008/GIS/world_geoid/s45e00/s45e00/w001001.adf</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1081" RasterYSize="1081" DataType="Float32" BlockXSize="512" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="1081" ySize="1081" />
+      <DstRect xOff="4320" yOff="2160" xSize="1081" ySize="1081" />
+      <NODATA>-3.4028234663852886e+38</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">/rdsi/PUBLIC/raad/data/earth-info.nga.mil/GandG/wgs84/gravitymod/egm2008/GIS/world_geoid/s45e135/s45e135/w001001.adf</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1081" RasterYSize="1081" DataType="Float32" BlockXSize="512" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="1081" ySize="1081" />
+      <DstRect xOff="7560" yOff="2160" xSize="1081" ySize="1081" />
+      <NODATA>-3.4028234663852886e+38</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">/rdsi/PUBLIC/raad/data/earth-info.nga.mil/GandG/wgs84/gravitymod/egm2008/GIS/world_geoid/s45e45/s45e45/w001001.adf</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1081" RasterYSize="1081" DataType="Float32" BlockXSize="512" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="1081" ySize="1081" />
+      <DstRect xOff="5400" yOff="2160" xSize="1081" ySize="1081" />
+      <NODATA>-3.4028234663852886e+38</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">/rdsi/PUBLIC/raad/data/earth-info.nga.mil/GandG/wgs84/gravitymod/egm2008/GIS/world_geoid/s45e90/s45e90/w001001.adf</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1081" RasterYSize="1081" DataType="Float32" BlockXSize="512" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="1081" ySize="1081" />
+      <DstRect xOff="6480" yOff="2160" xSize="1081" ySize="1081" />
+      <NODATA>-3.4028234663852886e+38</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">/rdsi/PUBLIC/raad/data/earth-info.nga.mil/GandG/wgs84/gravitymod/egm2008/GIS/world_geoid/s45w135/s45w135/w001001.adf</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1081" RasterYSize="1081" DataType="Float32" BlockXSize="512" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="1081" ySize="1081" />
+      <DstRect xOff="1080" yOff="2160" xSize="1081" ySize="1081" />
+      <NODATA>-3.4028234663852886e+38</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">/rdsi/PUBLIC/raad/data/earth-info.nga.mil/GandG/wgs84/gravitymod/egm2008/GIS/world_geoid/s45w180/s45w180/w001001.adf</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1081" RasterYSize="1081" DataType="Float32" BlockXSize="512" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="1081" ySize="1081" />
+      <DstRect xOff="0" yOff="2160" xSize="1081" ySize="1081" />
+      <NODATA>-3.4028234663852886e+38</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">/rdsi/PUBLIC/raad/data/earth-info.nga.mil/GandG/wgs84/gravitymod/egm2008/GIS/world_geoid/s45w45/s45w45/w001001.adf</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1081" RasterYSize="1081" DataType="Float32" BlockXSize="512" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="1081" ySize="1081" />
+      <DstRect xOff="3240" yOff="2160" xSize="1081" ySize="1081" />
+      <NODATA>-3.4028234663852886e+38</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">/rdsi/PUBLIC/raad/data/earth-info.nga.mil/GandG/wgs84/gravitymod/egm2008/GIS/world_geoid/s45w90/s45w90/w001001.adf</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1081" RasterYSize="1081" DataType="Float32" BlockXSize="512" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="1081" ySize="1081" />
+      <DstRect xOff="2160" yOff="2160" xSize="1081" ySize="1081" />
+      <NODATA>-3.4028234663852886e+38</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">/rdsi/PUBLIC/raad/data/earth-info.nga.mil/GandG/wgs84/gravitymod/egm2008/GIS/world_geoid/s90e00/s90e00/w001001.adf</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1081" RasterYSize="1081" DataType="Float32" BlockXSize="512" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="1081" ySize="1081" />
+      <DstRect xOff="4320" yOff="3240" xSize="1081" ySize="1081" />
+      <NODATA>-3.4028234663852886e+38</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">/rdsi/PUBLIC/raad/data/earth-info.nga.mil/GandG/wgs84/gravitymod/egm2008/GIS/world_geoid/s90e135/s90e135/w001001.adf</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1081" RasterYSize="1081" DataType="Float32" BlockXSize="512" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="1081" ySize="1081" />
+      <DstRect xOff="7560" yOff="3240" xSize="1081" ySize="1081" />
+      <NODATA>-3.4028234663852886e+38</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">/rdsi/PUBLIC/raad/data/earth-info.nga.mil/GandG/wgs84/gravitymod/egm2008/GIS/world_geoid/s90e45/s90e45/w001001.adf</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1081" RasterYSize="1081" DataType="Float32" BlockXSize="512" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="1081" ySize="1081" />
+      <DstRect xOff="5400" yOff="3240" xSize="1081" ySize="1081" />
+      <NODATA>-3.4028234663852886e+38</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">/rdsi/PUBLIC/raad/data/earth-info.nga.mil/GandG/wgs84/gravitymod/egm2008/GIS/world_geoid/s90e90/s90e90/w001001.adf</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1081" RasterYSize="1081" DataType="Float32" BlockXSize="512" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="1081" ySize="1081" />
+      <DstRect xOff="6480" yOff="3240" xSize="1081" ySize="1081" />
+      <NODATA>-3.4028234663852886e+38</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">/rdsi/PUBLIC/raad/data/earth-info.nga.mil/GandG/wgs84/gravitymod/egm2008/GIS/world_geoid/s90w135/s90w135/w001001.adf</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1081" RasterYSize="1081" DataType="Float32" BlockXSize="512" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="1081" ySize="1081" />
+      <DstRect xOff="1080" yOff="3240" xSize="1081" ySize="1081" />
+      <NODATA>-3.4028234663852886e+38</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">/rdsi/PUBLIC/raad/data/earth-info.nga.mil/GandG/wgs84/gravitymod/egm2008/GIS/world_geoid/s90w180/s90w180/w001001.adf</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1081" RasterYSize="1081" DataType="Float32" BlockXSize="512" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="1081" ySize="1081" />
+      <DstRect xOff="0" yOff="3240" xSize="1081" ySize="1081" />
+      <NODATA>-3.4028234663852886e+38</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">/rdsi/PUBLIC/raad/data/earth-info.nga.mil/GandG/wgs84/gravitymod/egm2008/GIS/world_geoid/s90w45/s90w45/w001001.adf</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1081" RasterYSize="1081" DataType="Float32" BlockXSize="512" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="1081" ySize="1081" />
+      <DstRect xOff="3240" yOff="3240" xSize="1081" ySize="1081" />
+      <NODATA>-3.4028234663852886e+38</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="0">/rdsi/PUBLIC/raad/data/earth-info.nga.mil/GandG/wgs84/gravitymod/egm2008/GIS/world_geoid/s90w90/s90w90/w001001.adf</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1081" RasterYSize="1081" DataType="Float32" BlockXSize="512" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="1081" ySize="1081" />
+      <DstRect xOff="2160" yOff="3240" xSize="1081" ySize="1081" />
+      <NODATA>-3.4028234663852886e+38</NODATA>
+    </ComplexSource>
+  </VRTRasterBand>
+</VRTDataset>
