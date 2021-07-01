@@ -112,3 +112,13 @@ for (i in seq_len(nrow(rockfiles))) {
 
 saveRDS(rockfiles, "01_rock_classification/rockfiles_rock_100m.rds")
 
+
+## now 1km
+
+file_1km <- raadfiles::rema_1km_files()$fullname
+
+r <- raster(file_1km)
+p <- fasterize(rock, r)
+writeRaster(p, file.path(raadroot, "1km", "REMA_1km_rock.tif"),
+            options = c(COMPRESS = "DEFLATE", SPARSE_OK="NO"), datatype = "INT1U", overwrite = FALSE)
+

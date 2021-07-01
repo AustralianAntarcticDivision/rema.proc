@@ -34,6 +34,7 @@ Current version uses [Release 1.1](https://www.pgc.umn.edu/data/rema/).
 
 The following steps are carried out. 
 
+- process 1km file, filled with geoid and 200m, with a single-pixel margin extra
 - process 200m and 100m to tiles matching 8m, with a single-pixel margin extra
 - calculate rock coverage from the ADD classification at 8m, 100m, 200m
 - fill 200m tiles with geoid, then source 200m DEM (the 200m is filled inside the coast)
@@ -54,6 +55,8 @@ All processed files written to `data_local/aad.gov.au/rema/processing/v1.1/`. Th
 
 We maintain tile versions of the processing, but also produce complete GeoTIFFs for the 100m and 200m sets. These are
 
+
+
 * REMA_100m_dem_geoid.tif
 * REMA_100m_slope.tif
 * REMA_100m_aspect.tif
@@ -66,6 +69,11 @@ We maintain tile versions of the processing, but also produce complete GeoTIFFs 
 * REMA_200m_rugosity.tif
 * REMA_200m_rock.tif
 
+* REMA_1km_dem_geoid.tif
+* REMA_1km_slope.tif
+* REMA_1km_aspect.tif
+* REMA_1km_rugosity.tif
+* REMA_1km_rock.tif
 
 
 File sizes vary due to the impact of compression (LZW) and the differences in coverage (rock is very sparse). The GeoTIFFs

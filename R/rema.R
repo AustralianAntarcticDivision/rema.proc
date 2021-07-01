@@ -37,6 +37,13 @@ ext_to_te100 <- function(x) {
   sprintf("-te %f %f %f %f", raster::xmin(x) - 100, raster::ymin(x) - 100,
           raster::xmax(x) + 100, raster::ymax(x) + 100)
 }
+
+#' Convenience functions to offset a tile extent by its resolution, hardcoded.
+#' @param raster or extent object of a tile
+ext_to_te1000 <- function(x) {
+  sprintf("-te %f %f %f %f", raster::xmin(x) - 1000, raster::ymin(x) - 1000,
+          raster::xmax(x) + 1000, raster::ymax(x) + 1000)
+}
 #' Convenience function, resolution to 'target resolution' of 'gdalwarp -tr'
 #' @param raster object
 res_to_tr <- function(x) {

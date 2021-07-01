@@ -28,6 +28,8 @@ Current version uses [Release 1.1](https://www.pgc.umn.edu/data/rema/).
 
 The following steps are carried out.
 
+-   process 1km file, filled with geoid and 200m, with a single-pixel
+    margin extra
 -   process 200m and 100m to tiles matching 8m, with a single-pixel
     margin extra
 -   calculate rock coverage from the ADD classification at 8m, 100m,
@@ -78,6 +80,16 @@ GeoTIFFs for the 100m and 200m sets. These are
 -   REMA\_200m\_rugosity.tif
 
 -   REMA\_200m\_rock.tif
+
+-   REMA\_1km\_dem\_geoid.tif
+
+-   REMA\_1km\_slope.tif
+
+-   REMA\_1km\_aspect.tif
+
+-   REMA\_1km\_rugosity.tif
+
+-   REMA\_1km\_rock.tif
 
 File sizes vary due to the impact of compression (LZW) and the
 differences in coverage (rock is very sparse). The GeoTIFFs are tiled
